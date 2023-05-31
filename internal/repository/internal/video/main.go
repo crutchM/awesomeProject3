@@ -14,22 +14,22 @@ func NewVideoRepository(db orm.DB) interfaces.VideoRepository {
 	return &videoRepositoryImpl{db: db}
 }
 
-func (v videoRepositoryImpl) GetVideo(uuid string) entity.VideoDTO {
+func (v *videoRepositoryImpl) GetVideo(uuid string) entity.VideoDTO {
 	//TODO implement me
 	panic("implement me")
 }
 
-func (v videoRepositoryImpl) CreateVideo(video entity.VideoDTO) (entity.VideoDTO, error) {
+func (v *videoRepositoryImpl) CreateVideo(video entity.VideoDTO) (entity.VideoDTO, error) {
 	//TODO implement me
 	panic("implement me")
 }
 
-func (v videoRepositoryImpl) GetVideoList(query ...string) ([]entity.VideoDTO, error) {
+func (v *videoRepositoryImpl) GetVideoList(query ...string) ([]entity.VideoDTO, error) {
 	//TODO implement me
 	panic("implement me")
 }
 
-func (v videoRepositoryImpl) GetVideoMinimized(uuid string) (entity.VideoMinimized, error) {
+func (v *videoRepositoryImpl) GetVideoMinimized(uuid string) (entity.VideoMinimized, error) {
 	//TODO implement me
 	panic("implement me")
 }
